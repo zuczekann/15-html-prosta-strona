@@ -18,13 +18,13 @@
      </nav>    
 
 
-    <section id="About-us">
+    <section id="about-us">
         <h1>O NAS</h1>   
         <p>tu będzie przykładowy tekst dot. "O NAS"  </p>
     </section>
 
 
-    <section id="Skills">
+    <section id="skills">
         <h1>Skills</h1>
         
             <div class="skills">
@@ -48,32 +48,34 @@
             </div>
     </section>
 
-    <section id="Portfolio">
+    <section id="portfolio">
         <h1>Portfolio</h1>
             <div class="portfolio-item">
-                <img src="/15-html-prosta-strona/mis.jpg" alt="opis obrazka-1"> 
+                <img src="mis.jpg" alt="opis obrazka-1"> 
             </div>
             <div class="portfolio-item">
-                <img src="/15-html-prosta-strona/mis.jpg" alt="opis obrazka-2"> 
+                <img src="mis.jpg" alt="opis obrazka-2"> 
             </div>            <div class="portfolio-item">
-                <img src="/15-html-prosta-strona/mis.jpg" alt="opis obrazka-3"> 
+                <img src="mis.jpg" alt="opis obrazka-3"> 
             </div>            <div class="portfolio-item">
-                <img src="/15-html-prosta-strona/mis.jpg" alt="opis obrazka-4"> 
+                <img src="mis.jpg" alt="opis obrazka-4"> 
             </div>
     </section>
 
 
     <!-- Dane kontaktowe - -->
     <br>
-    <section id="Contact">
+    <section id="contact">
         <h1>Imię i Nazwisko</h1>
-                <address>
+        <address>
             Imię i Nazwisko lub Nazwa firmy <br>
             ulica, numer <br>
             kod pocztowy miasto <br>
             Polska
         </address>
+        <br><br>
 
+        <!-- ŹLE  
         <div class="frm_kontaktowy">
             <form>
                 <dt>Imię</dt>
@@ -84,8 +86,37 @@
                 <dd><textarea name="wiadomosc" required></textarea></dd>
                 <input type="submit" value="Wyślij">
             </form>
-        </div>
+        </div> -->
 
+        <div class="frm_kontaktowy">
+            <form>
+                
+                <!-- wersja I  -->
+                <label>Imię i nazwisko:
+                        <input type="text" name="" required></label><br>
+                <label>Temat:
+                        <input type="text" temat="" required></label><br>
+                <label>Wiadomość:
+                        <input type="textarea" wiadomosc="" required></label><br>
+                
+                <!-- wersja II  -->
+                <br><br>
+                <label for="username">Imię i Nazwisko:</label>
+                <input id="username" name="username" type="text" required/>
+
+                <br>
+                <label for="messagesubject">Temat:</label>
+                <input id="messagesubject" name="messagesubject" type="text" required/>
+
+                <br>
+                <label for="message">Wiadomość:</label>
+                <input id="message" name="message" type="text" required/>  
+
+                <br>
+                <input type="submit" value="Wyślij">
+
+            </form>
+        </div>
     </section> 
     
 </body>
